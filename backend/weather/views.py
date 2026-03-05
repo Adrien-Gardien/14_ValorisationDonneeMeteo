@@ -72,6 +72,11 @@ class HoraireTempsReelViewSet(viewsets.ReadOnlyModelViewSet):
     """
     ViewSet for hourly real-time weather measurements.
     Optimized for time-series queries on TimescaleDB hypertable.
+
+
+
+
+    ouais oais
     """
 
     queryset = HoraireTempsReel.objects.select_related("station").all()
